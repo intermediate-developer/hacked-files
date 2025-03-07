@@ -1,0 +1,61 @@
+# Configuration for Alacritty
+# https://github.com/alacritty/alacritty
+
+window:
+  opacity: 0.8  # 80% opacity
+
+font:
+  # Normal (regular) font face
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+
+  size: 14.0
+
+colors:
+  # Default colors
+  primary:
+    background: '#1e1e2e'  # base
+    foreground: '#cdd6f4'  # fg-col
+
+  # Normal colors
+  normal:
+    black:   '#000000'  # shadow
+    red:     '#ff0000'  # fire
+    green:   '#a6e3a1'  # green
+    yellow:  '#f9e2af'  # yellow
+    blue:    '#89b4fa'  # blue
+    magenta: '#ff66ff'  # pink
+    cyan:    '#89dceb'  # sky
+    white:   '#cdd6f4'  # fg-col
+
+  # Bright colors
+  bright:
+    black:   '#4c4c4c'  # surface0
+    red:     '#ff4d4d'  # cherry
+    green:   '#b4f1b4'  # green (lighter)
+    yellow:  '#ffe4b5'  # yellow (lighter)
+    blue:    '#b3cffa'  # blue (lighter)
+    magenta: '#ff99ff'  # pink (lighter)
+    cyan:    '#b3e6e6'  # sky (lighter)
+    white:   '#ffffff'  # white
+
+  # Cursor colors
+  cursor:
+    text: '#000000'
+    cursor: '#cdd6f4'  # fg-col
+
+  # Selection colors
+  selection:
+    text: '#1e1e2e'  # bg-col
+    background: '#cdd6f4'  # fg-col
