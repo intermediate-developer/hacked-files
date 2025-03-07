@@ -11,3 +11,4 @@ Screen shot coming soon.
 - [polybar](polybar)
 - [alacritty](alacritty)
 - [rofi](rofi)
+- [winamp skin](winamp)
