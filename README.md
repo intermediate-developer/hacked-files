@@ -15,6 +15,8 @@ Screen shot coming soon.
 - [winamp skin](winamp)
 
   #Shortcuts
+
+  
   Shortcut	Mode	Action
 <Space> s	Normal	Save file (:w)
 <Space> q	Normal	Quit Neovim (:q)
