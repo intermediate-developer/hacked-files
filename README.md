@@ -16,7 +16,7 @@ Screen shot coming soon.
 
   #Shortcuts
 
-  
+  ```
   Shortcut	Mode	Action
 <Space> s	Normal	Save file (:w)
 <Space> q	Normal	Quit Neovim (:q)
@@ -35,3 +35,4 @@ Screen shot coming soon.
 <Space> n	Normal	Next buffer (:bnext)
 <Space> p	Normal	Previous buffer (:bprev)
 <Space> o	Normal	Close all other buffers (`:%bd
+```
