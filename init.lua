@@ -1,3 +1,4 @@
+-- commit: fixed spacebar interfere in insert mode
 -- Basics
 vim.opt.number = true                  -- Show line numbers
 vim.opt.relativenumber = true          -- Relative line numbers
@@ -23,8 +24,8 @@ vim.cmd [[
   highlight Constant guifg=#ff1111
 ]]
 
--- Leader key (Space)
-vim.g.mapleader = ' '
+-- Leader key (space)
+vim.g.mapleader = " "
 
 -- Searching
 vim.opt.hlsearch = true
@@ -108,9 +109,9 @@ vim.keymap.set('n', '<leader>p', ':bprev<CR>', opts)
 -- Close all other buffers (Space + o)
 vim.keymap.set('n', '<leader>o', ':%bd|e#<CR>', opts)
 
+-- === Using Ctrl for Keybindings ===
+vim.keymap.set('n', '<C-w>', ':w<CR>', { noremap = true, silent = true }) -- Ctrl + w for save
+vim.keymap.set('n', '<C-q>', ':q<CR>', { noremap = true, silent = true }) -- Ctrl + q for quit
 
-require('Comment').setup()
-
--- Comment toggle for normal and visual mode
-vim.keymap.set('n', '<leader>/', 'gcc', { noremap = false, silent = true })
-vim.keymap.set('v', '<leader>/', 'gc', { noremap = false, silent = true })
+-- Avoid leader key press in insert mode by unmapping space
+vim.keymap.set('i', '<Space>', '<Nop>', { noremap = true, silent = true })
